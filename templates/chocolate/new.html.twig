@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Chocolate{% endblock %}
+
+{% block body %}
+    <h1>Create new Chocolate</h1>
+
+    {{ include('chocolate/_form.html.twig') }}
+
+    <a href="{{ path('chocolate_index') }}">back to list</a>
+{% endblock %}
